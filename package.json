@@ -1,0 +1,56 @@
+{
+  "homepage": "google-calendar-clone",
+  "name": "google-calendar-react",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@headlessui/react": "^1.6.4",
+    "@heroicons/react": "^1.0.6",
+    "@popperjs/core": "^2.11.5",
+    "@reduxjs/toolkit": "^1.8.2",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.2.0",
+    "@testing-library/user-event": "^13.5.0",
+    "date-fns": "^2.28.0",
+    "focus-trap-react": "^8.11.2",
+    "gh-pages": "^4.0.0",
+    "material-symbols": "^0.1.0",
+    "react": "^18.1.0",
+    "react-day-picker": "^8.0.5",
+    "react-dom": "^18.1.0",
+    "react-popper": "^2.3.0",
+    "react-redux": "^8.0.2",
+    "react-scripts": "^5.0.1",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "build-css": "tailwindcss build src/input.css -o dist/output.css"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.0.24"
+  }
+}
