@@ -20,7 +20,7 @@ const initialState: ICalendarState = {
   modalCalMonth: formatISO(initialDate, { representation: 'date' }),
 };
 
-export const selectedSlice = createSlice({
+export const calendarSlice = createSlice({
   name: 'calendar',
   initialState,
   reducers: {
@@ -42,6 +42,6 @@ export const selectedSlice = createSlice({
 });
 
 export const { setCurDate, setCalMonth, changeCalView, setModalCalMonth } =
-  selectedSlice.actions;
+  calendarSlice.actions;
 
-export default selectedSlice.reducer;
+export default calendarSlice.reducer;

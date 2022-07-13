@@ -5,7 +5,7 @@ import {
   setEvent,
   setEventEditStartTime,
   setEventEditEndTime,
-} from '@/redux/reducers/modalRedeucer';
+} from '@/redux/reducers/modalReducer';
 import { format, formatISO, addHours } from 'date-fns';
 
 import ko from 'date-fns/locale/ko';

@@ -1,5 +1,5 @@
 import React from 'react';
-import { changeShowCal, setEventDate } from '@/redux/reducers/modalRedeucer';
+import { changeShowCal, setEventDate } from '@/redux/reducers/modalReducer';
 import { DayPicker } from 'react-day-picker';
 import { setCurDate, setModalCalMonth } from '@/redux/reducers/calendarReducer';
 import { formatISO, parseISO, format } from 'date-fns';

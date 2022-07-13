@@ -1,18 +1,18 @@
 import Image from 'next/image';
 import React from 'react';
 
-type Icon_img = {
+type IIconImg = {
   src: string;
   alt: string;
   onClick?: (evt: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;
 };
 
-type Icon_ms = {
+type IIconMS = {
   alt: string;
   onClick?: (evt: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;
 };
 
-export function IMGIcon({ icon }: { icon: Icon_img }) {
+export function IMGIcon({ icon }: { icon: IIconImg }) {
   return (
     <button
       className="m-2 h-10 w-10 p-[10px] bg-transparent text-sm rounded-full headerColor headerHoverColor"
@@ -23,7 +23,7 @@ export function IMGIcon({ icon }: { icon: Icon_img }) {
   );
 }
 
-export function MSIcon({ icon }: { icon: Icon_ms }) {
+export function MSIcon({ icon }: { icon: IIconMS }) {
   return (
     <button
       className="mt-5 h-10 w-10 bg-transparent text-sm rounded-full headerColor headerHoverColor"

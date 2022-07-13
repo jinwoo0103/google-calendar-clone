@@ -12,7 +12,7 @@ const initialState: { normal: { [date: string]: IEvent[] } } = {
   normal: {},
 };
 
-export const eventReducer = createSlice({
+export const eventSlice = createSlice({
   name: 'events',
   initialState,
   reducers: {
@@ -37,6 +37,6 @@ export const eventReducer = createSlice({
   },
 });
 
-export const { addEvent, removeEvent } = eventReducer.actions;
+export const { addEvent, removeEvent } = eventSlice.actions;
 
-export default eventReducer.reducer;
+export default eventSlice.reducer;
