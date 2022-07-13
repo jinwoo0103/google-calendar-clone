@@ -14,7 +14,7 @@ import {
   setEventEditEndTime,
   setEventStartTime,
   setEventEndTime,
-} from '@/redux/reducers/modalRedeucer';
+} from '@/redux/reducers/modalReducer';
 import { addEvent } from '@/redux/reducers/eventReducer';
 import { useAppSelector, useAppDispatch } from '@/redux/hooks';
 import ModalSelectDate from './ModalSelectDate';
